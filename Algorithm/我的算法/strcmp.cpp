@@ -37,18 +37,21 @@ char *strcat(char *dest, const char *src){
 }
 char *strcpy(char* dest, const char*src){
     assert((dest != NULL) && (src != NULL));
+    
     char *str = dest;
     while(*src != '\0'){
         *str = *src;
         str++;
         src++;
     }
+    src = '\0';
     return dest;
 }
 
 void *memcopy( void* dest , const void* src , size_t n )
 {
     assert(dest != NULL && scr != NULL);
+    
     char* newDest = (char*)dest;
     const char* newSrc = (const char*) src;
     while( n-- )
@@ -61,9 +64,9 @@ void *memcopy( void* dest , const void* src , size_t n )
 void* memmove(void* dest, const void* src, size_t n)
 {
     assert(dest != NULL && scr != NULL);
+    
     char* newDest = (char*)dest;
     const char* newSrc = (char*)srt;
-    
     if(newDest > newSrc && (newSrc + n > newDest)) {
         newDest = newDest + n - 1;
         newSrc = newSrc + n - 1;

@@ -1082,6 +1082,8 @@
 		50136B362424A5FD00CF0C4B /* 1_9最大子矩阵的大小.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "1_9最大子矩阵的大小.cpp"; sourceTree = "<group>"; };
 		50136B382424E44F00CF0C4B /* O(n)中位数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "O(n)中位数.cpp"; sourceTree = "<group>"; };
 		502EB2552425008C00684D42 /* 一行代码求解最大公约数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "一行代码求解最大公约数.cpp"; sourceTree = "<group>"; };
+		506F373F242A5C3800C0DD7E /* 比赛安排.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "比赛安排.cpp"; sourceTree = "<group>"; };
+		506F3740242B43DF00C0DD7E /* 回调函数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "回调函数.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1203,6 +1205,7 @@
 				5013661F2423C5C500CF0C4B /* ThirdNumber.cpp */,
 				501366412423C5C500CF0C4B /* UniString.cpp */,
 				5013660B2423C5C500CF0C4B /* VectorOddEven.cpp */,
+				506F373F242A5C3800C0DD7E /* 比赛安排.cpp */,
 			);
 			path = "临时问题";
 			sourceTree = "<group>";
@@ -3525,6 +3528,7 @@
 				501368D52423C5C700CF0C4B /* strcmp.cpp */,
 				50136B2A2424767E00CF0C4B /* 并查集.cpp */,
 				50136B382424E44F00CF0C4B /* O(n)中位数.cpp */,
+				506F3740242B43DF00C0DD7E /* 回调函数.cpp */,
 			);
 			path = "我的算法";
 			sourceTree = "<group>";

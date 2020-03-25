@@ -118,7 +118,7 @@ void shellSort(vector<T>&v){
 //桶排序
 
 void bucketSort(vector<int> &v){
-    int N = v.size();
+    int N = (int)v.size();
     int maxV = 20;
     vector<int> bucket(maxV);
     for (int i = 0; i < N; i++){
@@ -183,8 +183,7 @@ void mergeSort(vector<T> &v, int start, int end, vector<T> &result){
 
 template<typename T>
 void printVector(vector<T> v){
-    int N = v.size();
-    for (int i = 0; i < N; i++){
+    for (int i = 0; i < (int)v.size(); i++){
         cout<<v[i]<<" ";
     }
     cout<<endl;
@@ -202,7 +201,7 @@ int main(){
     //bucketSort(v0);
     //quickSort(v0,0,v0.size()-1);
     
-    mergeSort(v0, 0, v0.size()-1,result);
+    mergeSort(v0, 0, (int)v0.size()-1,result);
     //v0 = result;
     //sort(v0.begin(), v0.end(), [](int x, int y)->bool{return x > y;});
     printVector(v0);
