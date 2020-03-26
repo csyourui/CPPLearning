@@ -89,8 +89,7 @@ void heapSort(vector<T> &v){
         maxHeapify(v, i, N - 1);
     }
     for (int i = N - 1; i > 0; i--){
-        my_swap(v[0], v[i]);
-        maxHeapify(v, 0, i - 1);
+         maxHeapify(v, 0, i - 1);
     }
 }
 
@@ -133,23 +132,43 @@ void bucketSort(vector<int> &v){
 }
 //快速排序
 template<typename T>
-bool quickSort(vector<T> &v, int start, int end){
-    if(start >= end) return true;
-    T key = v[start];
-    int i = start + 1, j = end;
-    while(true){
-        while(v[i] < key && i < end){
-            i++;
-        }
-        while(v[j] > key && j > start){
-            j--;
-        }
-        if(i >= j ) break;
-        my_swap(v[i], v[j]);
+int partition(vector<T>& v,int start,int end){
+    int pivot = v[start];
+    while(start < end) {
+        while(start < end && v[end] >= pivot) end--;
+        v[start] = v[end];
+        while(start < end && v[start] <= pivot) start++;
+        v[end] = v[start];
     }
-    my_swap(v[start], v[j]);
-    return quickSort(v, start, j - 1) && quickSort(v, j + 1, end);
+    v[start] = pivot;
+    return start;
 }
+template<typename T>
+void quickSort(vector<T>& v,int start,int end){
+    if(start < end) {
+        int pivotpos = partition(v,start,end);
+        quickSort(v, start, pivotpos-1);
+        quickSort(v, pivotpos+1, end);
+    }
+}
+//template<typename T>
+//bool quickSort(vector<T> &v, int start, int end){
+//    if(start >= end) return true;
+//    T key = v[start];
+//    int i = start + 1, j = end;
+//    while(true){
+//        while(v[i] < key && i < end){
+//            i++;
+//        }
+//        while(v[j] > key && j > start){
+//            j--;
+//        }
+//        if(i >= j ) break;
+//        my_swap(v[i], v[j]);
+//    }
+//    my_swap(v[start], v[j]);
+//    return quickSort(v, start, j - 1) && quickSort(v, j + 1, end);
+//}
 
 //归并排序
 template<typename T>
@@ -199,9 +218,9 @@ int main(){
     //heapSort(v0);
     //shellSort(v0);
     //bucketSort(v0);
-    //quickSort(v0,0,v0.size()-1);
+    quickSort(v0,0,v0.size()-1);
     
-    mergeSort(v0, 0, (int)v0.size()-1,result);
+    //mergeSort(v0, 0, (int)v0.size()-1,result);
     //v0 = result;
     //sort(v0.begin(), v0.end(), [](int x, int y)->bool{return x > y;});
     printVector(v0);

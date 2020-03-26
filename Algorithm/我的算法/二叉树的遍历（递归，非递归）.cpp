@@ -96,22 +96,22 @@ template<typename T>
 void postorder2(TreeNode<T> *root){
     stack<TreeNode<T>*> bacStack;
     TreeNode<T>* record = nullptr;
-    TreeNode<T>* p = root;
-    while (!bacStack.empty() || p) {
-        if(p){
-            bacStack.push(p);
-            p = p->left;
+    TreeNode<T>* temp = root;
+    while (!bacStack.empty() || temp) {
+        if(temp){
+            bacStack.push(temp);
+            temp = temp->left;
         }
         else{
-            p = bacStack.top();
-            if(p->right && p->right != record){
-                p = p->right;
+            temp = bacStack.top();
+            if(temp->right && temp->right != record){
+                temp = temp->right;
             }
             else{
                 bacStack.pop();
-                cout<<p->val;
-                record = p;
-                p = nullptr;
+                cout<<temp->val;
+                record = temp;
+                temp = nullptr;
             }
         }
     }
