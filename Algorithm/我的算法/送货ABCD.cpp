@@ -16,7 +16,7 @@ struct Point{
 };
     
 int getLength(Point &a, Point &b){
-    return abs(a.x-b.x) + abs(a.y-b.y);
+    return abs(a.x - b.x) + abs(a.y - b.y);
 }
 
 int minPath = INT_MAX;
@@ -30,7 +30,6 @@ void caculate(vector<Point>& points, Point p, int totalLen, int count) {
             totalLen += getLength(points[i], p);
             if(totalLen < minPath)
                 caculate(points, points[i], totalLen, count + 1);
-
             totalLen -= getLength(points[i], p);
             points[i].isVisited = false;
         }

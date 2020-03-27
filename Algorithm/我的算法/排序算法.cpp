@@ -151,24 +151,6 @@ void quickSort(vector<T>& v,int start,int end){
         quickSort(v, pivotpos+1, end);
     }
 }
-//template<typename T>
-//bool quickSort(vector<T> &v, int start, int end){
-//    if(start >= end) return true;
-//    T key = v[start];
-//    int i = start + 1, j = end;
-//    while(true){
-//        while(v[i] < key && i < end){
-//            i++;
-//        }
-//        while(v[j] > key && j > start){
-//            j--;
-//        }
-//        if(i >= j ) break;
-//        my_swap(v[i], v[j]);
-//    }
-//    my_swap(v[start], v[j]);
-//    return quickSort(v, start, j - 1) && quickSort(v, j + 1, end);
-//}
 
 //归并排序
 template<typename T>

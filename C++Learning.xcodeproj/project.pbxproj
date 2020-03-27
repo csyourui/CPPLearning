@@ -513,6 +513,8 @@
 		50136B372424A5FD00CF0C4B /* 1_9最大子矩阵的大小.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50136B362424A5FD00CF0C4B /* 1_9最大子矩阵的大小.cpp */; };
 		50136B392424E44F00CF0C4B /* O(n)中位数.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50136B382424E44F00CF0C4B /* O(n)中位数.cpp */; };
 		502EB2562425008C00684D42 /* 一行代码求解最大公约数.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 502EB2552425008C00684D42 /* 一行代码求解最大公约数.cpp */; };
+		506F374F242DD09D00C0DD7E /* 10_4变态跳楼梯.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 506F374E242DD09D00C0DD7E /* 10_4变态跳楼梯.cpp */; };
+		506F375C242E378B00C0DD7E /* 68_二叉树的最近公共祖先.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 506F375B242E378B00C0DD7E /* 68_二叉树的最近公共祖先.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1084,6 +1086,32 @@
 		502EB2552425008C00684D42 /* 一行代码求解最大公约数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "一行代码求解最大公约数.cpp"; sourceTree = "<group>"; };
 		506F373F242A5C3800C0DD7E /* 比赛安排.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "比赛安排.cpp"; sourceTree = "<group>"; };
 		506F3740242B43DF00C0DD7E /* 回调函数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "回调函数.cpp"; sourceTree = "<group>"; };
+		506F3742242DC45100C0DD7E /* 3_数组中重复的数字.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "3_数组中重复的数字.cpp"; sourceTree = "<group>"; };
+		506F3746242DC52100C0DD7E /* 4_二维数组的查找.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "4_二维数组的查找.cpp"; sourceTree = "<group>"; };
+		506F3747242DC89300C0DD7E /* 5_替换空格.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "5_替换空格.cpp"; sourceTree = "<group>"; };
+		506F3748242DCA3800C0DD7E /* 6_从尾到头打印链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "6_从尾到头打印链表.cpp"; sourceTree = "<group>"; };
+		506F3749242DCB9400C0DD7E /* 7_重建二叉树.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "7_重建二叉树.cpp"; sourceTree = "<group>"; };
+		506F374A242DCDF800C0DD7E /* 8_二叉树的下一个节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "8_二叉树的下一个节点.cpp"; sourceTree = "<group>"; };
+		506F374B242DCE6900C0DD7E /* 9_两个栈实现队列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "9_两个栈实现队列.cpp"; sourceTree = "<group>"; };
+		506F374C242DCFAA00C0DD7E /* 10_1_斐波那契数列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "10_1_斐波那契数列.cpp"; sourceTree = "<group>"; };
+		506F374D242DD02400C0DD7E /* 10_2_矩形覆盖.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "10_2_矩形覆盖.cpp"; sourceTree = "<group>"; };
+		506F374E242DD09D00C0DD7E /* 10_4变态跳楼梯.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "10_4变态跳楼梯.cpp"; sourceTree = "<group>"; };
+		506F3750242DE57A00C0DD7E /* 11_旋转数字的最小数字.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "11_旋转数字的最小数字.cpp"; sourceTree = "<group>"; };
+		506F3751242DEBF900C0DD7E /* 12_矩阵中的路径.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "12_矩阵中的路径.cpp"; sourceTree = "<group>"; };
+		506F3752242DF20100C0DD7E /* 13_机器人的运动范围.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "13_机器人的运动范围.cpp"; sourceTree = "<group>"; };
+		506F3753242DF62900C0DD7E /* 14_剪绳子.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "14_剪绳子.cpp"; sourceTree = "<group>"; };
+		506F3754242DFC1100C0DD7E /* 15_二进制1的个数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "15_二进制1的个数.cpp"; sourceTree = "<group>"; };
+		506F3755242E00DE00C0DD7E /* 16_数值的整数次方.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "16_数值的整数次方.cpp"; sourceTree = "<group>"; };
+		506F3756242E037D00C0DD7E /* 17_ 打印从1到最大的n位数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "17_ 打印从1到最大的n位数.cpp"; sourceTree = "<group>"; };
+		506F3757242E207500C0DD7E /* 19_正则表达式匹配.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "19_正则表达式匹配.cpp"; sourceTree = "<group>"; };
+		506F3758242E2A7300C0DD7E /* 21_调整数组顺序使奇数位于偶数前面.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "21_调整数组顺序使奇数位于偶数前面.cpp"; sourceTree = "<group>"; };
+		506F3759242E2DEE00C0DD7E /* 22_链表中倒数第K个点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "22_链表中倒数第K个点.cpp"; sourceTree = "<group>"; };
+		506F375A242E31F400C0DD7E /* 23_链表环的入口.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "23_链表环的入口.cpp"; sourceTree = "<group>"; };
+		506F375B242E378B00C0DD7E /* 68_二叉树的最近公共祖先.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "68_二叉树的最近公共祖先.cpp"; sourceTree = "<group>"; };
+		506F375D242E3FBF00C0DD7E /* 67_字符串转换为整数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "67_字符串转换为整数.cpp"; sourceTree = "<group>"; };
+		506F375E242E44B700C0DD7E /* 66_构建乘积数组.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "66_构建乘积数组.cpp"; sourceTree = "<group>"; };
+		506F375F242E486400C0DD7E /* 38_字符串的排列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "38_字符串的排列.cpp"; sourceTree = "<group>"; };
+		506F3760242E4D3800C0DD7E /* 39_数组中出现次数超过一半的数字.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "39_数组中出现次数超过一半的数字.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1254,6 +1282,7 @@
 		5013666A2423C5C500CF0C4B /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				506F3744242DC4E400C0DD7E /* 剑指OFFER */,
 				50136B2B2424957F00CF0C4B /* 程序员代码面试指南 */,
 				50136B052423C73600CF0C4B /* lib */,
 				5013666B2423C5C500CF0C4B /* LeetCode */,
@@ -3615,6 +3644,39 @@
 			path = "程序员代码面试指南";
 			sourceTree = "<group>";
 		};
+		506F3744242DC4E400C0DD7E /* 剑指OFFER */ = {
+			isa = PBXGroup;
+			children = (
+				506F3742242DC45100C0DD7E /* 3_数组中重复的数字.cpp */,
+				506F3746242DC52100C0DD7E /* 4_二维数组的查找.cpp */,
+				506F3747242DC89300C0DD7E /* 5_替换空格.cpp */,
+				506F3748242DCA3800C0DD7E /* 6_从尾到头打印链表.cpp */,
+				506F3749242DCB9400C0DD7E /* 7_重建二叉树.cpp */,
+				506F374A242DCDF800C0DD7E /* 8_二叉树的下一个节点.cpp */,
+				506F374B242DCE6900C0DD7E /* 9_两个栈实现队列.cpp */,
+				506F374C242DCFAA00C0DD7E /* 10_1_斐波那契数列.cpp */,
+				506F374D242DD02400C0DD7E /* 10_2_矩形覆盖.cpp */,
+				506F374E242DD09D00C0DD7E /* 10_4变态跳楼梯.cpp */,
+				506F3750242DE57A00C0DD7E /* 11_旋转数字的最小数字.cpp */,
+				506F3751242DEBF900C0DD7E /* 12_矩阵中的路径.cpp */,
+				506F3752242DF20100C0DD7E /* 13_机器人的运动范围.cpp */,
+				506F3753242DF62900C0DD7E /* 14_剪绳子.cpp */,
+				506F3754242DFC1100C0DD7E /* 15_二进制1的个数.cpp */,
+				506F3755242E00DE00C0DD7E /* 16_数值的整数次方.cpp */,
+				506F3756242E037D00C0DD7E /* 17_ 打印从1到最大的n位数.cpp */,
+				506F3757242E207500C0DD7E /* 19_正则表达式匹配.cpp */,
+				506F3758242E2A7300C0DD7E /* 21_调整数组顺序使奇数位于偶数前面.cpp */,
+				506F3759242E2DEE00C0DD7E /* 22_链表中倒数第K个点.cpp */,
+				506F375A242E31F400C0DD7E /* 23_链表环的入口.cpp */,
+				506F375F242E486400C0DD7E /* 38_字符串的排列.cpp */,
+				506F375E242E44B700C0DD7E /* 66_构建乘积数组.cpp */,
+				506F375D242E3FBF00C0DD7E /* 67_字符串转换为整数.cpp */,
+				506F375B242E378B00C0DD7E /* 68_二叉树的最近公共祖先.cpp */,
+				506F3760242E4D3800C0DD7E /* 39_数组中出现次数超过一半的数字.cpp */,
+			);
+			path = "剑指OFFER";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3829,6 +3891,7 @@
 				501369162423C5C800CF0C4B /* MinStore.cpp in Sources */,
 				50136A362423C5C800CF0C4B /* 312_BurstBalloons.cpp in Sources */,
 				50136A632423C5C800CF0C4B /* strStr.cpp in Sources */,
+				506F375C242E378B00C0DD7E /* 68_二叉树的最近公共祖先.cpp in Sources */,
 				501369542423C5C800CF0C4B /* CousinsInBinaryTree.cpp in Sources */,
 				501369C32423C5C800CF0C4B /* findPeakElement.cpp in Sources */,
 				50136A1E2423C5C800CF0C4B /* removeDuplicatesFromSortedArray.II.cpp in Sources */,
@@ -4020,6 +4083,7 @@
 				50136A972423C5C800CF0C4B /* 19_removeNthNodeFromEndOfList.cpp in Sources */,
 				50136A152423C5C800CF0C4B /* 401_BinaryWatch.cpp in Sources */,
 				50136A902423C5C800CF0C4B /* 1227_numberOfEquivalentDominoPairs.cpp in Sources */,
+				506F374F242DD09D00C0DD7E /* 10_4变态跳楼梯.cpp in Sources */,
 				501369042423C5C800CF0C4B /* sukudo.cpp in Sources */,
 				50136A882423C5C800CF0C4B /* CreateMaximumNumber.cpp in Sources */,
 				5013695A2423C5C800CF0C4B /* searchForRange.cpp in Sources */,
