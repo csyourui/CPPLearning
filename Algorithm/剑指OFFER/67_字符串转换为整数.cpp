@@ -6,28 +6,53 @@
 //  Copyright © 2020 yourui. All rights reserved.
 //
 
-int StrToInt(string str) {
+#include <stdlib.h>
+#include <stdio.h>
+#include <limits.h>
+
+
+int flag = 1;
+int myAtoi(const char *str){
+    if(str == nullptr || *str == '\0'){
+        flag = 0;
+        return 0;
+    }
     long long res = 0;
-    if(str == "") return 0;
-    bool isNegative = false;
-    char c = str[0];
-    int i = 0;
-    if(c < '0' || c >'9'){
-        i++;
-        if(c == '+') isNegative = false;
-        else if(c == '-') isNegative = true;
-        else return 0;
+    bool negative = false;
+    if(*str == '+'){
+        str++;
+    }else if(*str == '-'){
+        str++;
+        negative = true;
     }
-    while(i < (int)str.length()){
-        int n = str[i++]-'0';
-        if(n<0||n>9) return 0;
-        res = 10*res + n;
+    //只有正负号时
+    if(*str == '\0'){
+        flag = 0;
+        return 0;
     }
-    if(isNegative){
-        res = -res;
-        if(res < INT_MIN) return 0;
+    while(*str != '\0'){
+        if(*str < '0' || *str > '9'){
+            flag = 0;
+            return 0;
+        }else{
+            res =  res * 10 + *str - '0';
+            str++;
+        }
+    }
+    res = negative? -1*res : res;
+    if(res < INT_MIN || res > INT_MAX){
+        flag = 0;
+        return 0;
+    }
+    return (int) res;
+}
+int main(){
+    char *str = "-312312";
+    int res = myAtoi(str);
+    if(flag == 0){
+        printf("Bad request!\n");
     }else{
-        if(res > INT_MAX) return 0;
+        printf("%d\n", res);
     }
-    return res;
+    
 }

@@ -8,14 +8,16 @@
 
 #include <stdio.h>
 //二分查找复杂度O(logN)
-int minNumberInRotateArray(vector<int> rotateArray) {
-    int low = 0, high = rotateArray.size()-1;
-    while(low < high){
-        int mid = low + (high - low)/2;
-        if(rotateArray[mid] > rotateArray[high])
-            low = mid+1;
-        else
-            high = mid;
+int minNumberInRotateArray(vector<int> numbers) {
+    int l = 0, r = numbers.size() - 1;
+    while(l < r){
+        int mid = l + (r - l) / 2;
+        //如果中间比右边要小，右边一定为升序
+        if(numbers[mid] < numbers[r]){
+            r = mid;
+        }else if(numbers[mid] > numbers[r]){
+            l = mid + 1;
+        }else r--;
     }
-    return rotateArray[low];
+    return numbers[l];
 }

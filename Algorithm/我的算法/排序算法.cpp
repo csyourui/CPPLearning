@@ -34,13 +34,9 @@ template<typename T>
 void insertSort(vector<T> &v){
     int N = v.size();
     for (int i = 1; i < N; i++){
-        T temp = v[i];
-        int j = i - 1;
-        while((j >= 0)&&(temp < v[j])){
-            v[j+1] = v[j];
-            j--;
+        for(int j = i; j >= 1 && v[j] < v[j-1]; j--){
+            swap(v[j], v[j-1]);
         }
-        v[j+1] = temp;
     }
 }
 
@@ -85,11 +81,14 @@ void maxHeapify(vector<T>& v, int i, int n){
 template<typename T>
 void heapSort(vector<T> &v){
     int N = v.size();
+    //从N/2-1处开始heapify
     for(int i = N/2 - 1; i >= 0; i--){
         maxHeapify(v, i, N - 1);
     }
+    //将堆顶元素交换到数组末尾，减少数组长度，进行heapify
     for (int i = N - 1; i > 0; i--){
-         maxHeapify(v, 0, i - 1);
+        swap(v[0], v[i]);
+        maxHeapify(v, 0, i - 1);
     }
 }
 
@@ -98,24 +97,20 @@ template<typename T>
 void shellSort(vector<T>&v){
     int N = v.size();
     int h = 1;
-    while(h < N / 3)
-        h = 3 * h + 1;
-    while(h >= 1){
-
-        for(int i = h; i < N; i++){
-
-            T e = v[i];
-            int j;
-            for(j = i; j >= h && e < v[j - h]; j = j - h){
-                v[j] = v[j - h];
+    while (h < N / 3) {
+        h = 3 * h + 1; // 1, 4, 13, 40, ...
+    }
+    while (h >= 1) {
+        for (int i = h; i < N; i++) {
+            for (int j = i; j >= h && v[j] < v[j - h]; j -= h) {
+                swap(v[j], v[j - h]);
             }
-            v[j] = e;
         }
         h /= 3;
     }
 }
-//桶排序
 
+//桶排序
 void bucketSort(vector<int> &v){
     int N = (int)v.size();
     int maxV = 20;
@@ -154,7 +149,8 @@ void quickSort(vector<T>& v,int start,int end){
 
 //归并排序
 template<typename T>
-void merge(vector<T>&v, int start, int mid, int end, vector<T> &result){
+void merge(vector<T>&v, int start, int mid, int end){
+    vector<T> result(end-start+1);
     int i = start, j = mid + 1, k = 0;
     while(i <= mid && j <= end){
         if(v[i] <= v[j])
@@ -166,18 +162,17 @@ void merge(vector<T>&v, int start, int mid, int end, vector<T> &result){
         result[k++] = v[i++];
     while(j <= end)
         result[k++] = v[j++];
-    k = 0;
-    while(start <= end){
-        v[start++] = result[k++];
+    for(int i = start ; i <= end; i++){
+        v[i] = result[i-start];
     }
 }
 template<typename T>
-void mergeSort(vector<T> &v, int start, int end, vector<T> &result){
+void mergeSort(vector<T> &v, int start, int end){
     if(start < end){
         int mid = start + (end - start)/2;
-        mergeSort(v, start, mid, result);
-        mergeSort(v, mid+1, end, result);
-        merge(v, start, mid, end, result);
+        mergeSort(v, start, mid);
+        mergeSort(v, mid+1, end);
+        merge(v, start, mid, end);
     }
 }
 
@@ -189,6 +184,20 @@ void printVector(vector<T> v){
     }
     cout<<endl;
 }
+
+//仿函数，重载()运算符
+template<class T>
+struct myless{
+    bool operator()(const T&a, const T&b){
+        return a < b;
+    }
+};
+
+template<typename T>
+static bool mycmp(const T& a, const T& b){
+    return a < b;
+}
+
 int main(){
     vector<int> v0 = {6,2,5,3,11,1,10,0,9,8,7,4};
     vector<int> a = {0,1,2,3,4,5,6,7,8};
@@ -200,11 +209,18 @@ int main(){
     //heapSort(v0);
     //shellSort(v0);
     //bucketSort(v0);
-    quickSort(v0,0,v0.size()-1);
+    //quickSort(v0,0,v0.size()-1);
     
     //mergeSort(v0, 0, (int)v0.size()-1,result);
     //v0 = result;
-    //sort(v0.begin(), v0.end(), [](int x, int y)->bool{return x > y;});
+    
+    //cmp函数
+    //sort(v0.begin(), v0.end(), mycmp<int>);
+    //lambad表达式
+    //sort(v0.begin(), v0.end(), [](int x, int y)->bool{return x < y;});
+    //仿函数
+    sort(v0.begin(), v0.end(), myless<int>());
+
     printVector(v0);
 
 

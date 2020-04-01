@@ -29,15 +29,16 @@ public:
 
 class CarFactory{
 public:
-    static AbstractCar* GenerateCar(string car){
-        if(car == "BMW")
-            return new BMW;
-        else if (car == "BenZ")
-            return new BenZ;
-        else
-            return nullptr;
-    }
+    static AbstractCar* GenerateCar(string car)
 };
+AbstractCar* CarFactory::GenerateCar(string car){
+    if(car == "BMW")
+        return new BMW;
+    else if (car == "BenZ")
+        return new BenZ;
+    else
+        return nullptr;
+}
 int main(){
     CarFactory *factory = new CarFactory;
     AbstractCar* BMW = factory->GenerateCar("BMW");
