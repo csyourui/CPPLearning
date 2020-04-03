@@ -494,7 +494,7 @@
 		50136AD72423C5C900CF0C4B /* 二叉树高度.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368DF2423C5C700CF0C4B /* 二叉树高度.cpp */; };
 		50136AD82423C5C900CF0C4B /* 送货ABCD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368E02423C5C700CF0C4B /* 送货ABCD.cpp */; };
 		50136AD92423C5C900CF0C4B /* 两个stack实现queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368E12423C5C700CF0C4B /* 两个stack实现queue.cpp */; };
-		50136ADA2423C5C900CF0C4B /* i++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368E22423C5C700CF0C4B /* i++.cpp */; };
+		50136ADA2423C5C900CF0C4B /* i++重载运算符.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368E22423C5C700CF0C4B /* i++重载运算符.cpp */; };
 		50136ADB2423C5C900CF0C4B /* 最大子数组和.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368E32423C5C700CF0C4B /* 最大子数组和.cpp */; };
 		50136ADC2423C5C900CF0C4B /* 反转链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368E42423C5C700CF0C4B /* 反转链表.cpp */; };
 		50136ADD2423C5C900CF0C4B /* 二叉树最远节点的距离.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368E52423C5C700CF0C4B /* 二叉树最远节点的距离.cpp */; };
@@ -1037,7 +1037,7 @@
 		501368DF2423C5C700CF0C4B /* 二叉树高度.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "二叉树高度.cpp"; sourceTree = "<group>"; };
 		501368E02423C5C700CF0C4B /* 送货ABCD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "送货ABCD.cpp"; sourceTree = "<group>"; };
 		501368E12423C5C700CF0C4B /* 两个stack实现queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "两个stack实现queue.cpp"; sourceTree = "<group>"; };
-		501368E22423C5C700CF0C4B /* i++.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "i++.cpp"; sourceTree = "<group>"; };
+		501368E22423C5C700CF0C4B /* i++重载运算符.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "i++重载运算符.cpp"; sourceTree = "<group>"; };
 		501368E32423C5C700CF0C4B /* 最大子数组和.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "最大子数组和.cpp"; sourceTree = "<group>"; };
 		501368E42423C5C700CF0C4B /* 反转链表.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "反转链表.cpp"; sourceTree = "<group>"; };
 		501368E52423C5C700CF0C4B /* 二叉树最远节点的距离.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "二叉树最远节点的距离.cpp"; sourceTree = "<group>"; };
@@ -1089,7 +1089,9 @@
 		50340A5C2434686300F2572D /* 全排列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "全排列.cpp"; sourceTree = "<group>"; };
 		50340A5D2434822B00F2572D /* 读者写者问题(写者优先).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "读者写者问题(写者优先).cpp"; sourceTree = "<group>"; };
 		50340A5E2434845400F2572D /* 读者写者问题(读写公平).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "读者写者问题(读写公平).cpp"; sourceTree = "<group>"; };
-		503A57E4242EDDD900ACBE0E /* 字典树.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "字典树.cpp"; sourceTree = "<group>"; };
+		50340A5F2434C7B400F2572D /* 字典树例题.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "字典树例题.cpp"; sourceTree = "<group>"; };
+		50340A602434C7E700F2572D /* 字典树类.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "字典树类.cpp"; sourceTree = "<group>"; };
+		50340A612434EBC800F2572D /* 函数重载.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "函数重载.cpp"; sourceTree = "<group>"; };
 		503A57E5242F0BCD00ACBE0E /* 24_反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "24_反转链表.cpp"; sourceTree = "<group>"; };
 		503A57E6242F0C2D00ACBE0E /* 25_合并两个有序链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "25_合并两个有序链表.cpp"; sourceTree = "<group>"; };
 		503A57E7242F0D3A00ACBE0E /* 26_树的子结构.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "26_树的子结构.cpp"; sourceTree = "<group>"; };
@@ -3579,7 +3581,6 @@
 				501368E02423C5C700CF0C4B /* 送货ABCD.cpp */,
 				503A57F3243032BA00ACBE0E /* 哲学家就餐问题.cpp */,
 				501368DE2423C5C700CF0C4B /* 重建二叉树.cpp */,
-				503A57E4242EDDD900ACBE0E /* 字典树.cpp */,
 				501368CF2423C5C700CF0C4B /* 字符串分割.cpp */,
 				501368DA2423C5C700CF0C4B /* 字符匹配.cpp */,
 				501368E32423C5C700CF0C4B /* 最大子数组和.cpp */,
@@ -3588,12 +3589,15 @@
 				501368E62423C5C700CF0C4B /* 最长回文子串.cpp */,
 				501368D92423C5C700CF0C4B /* 最长回文子序列.cpp */,
 				50136B142423C95400CF0C4B /* 最长上升子序列.cpp */,
-				501368E22423C5C700CF0C4B /* i++.cpp */,
+				501368E22423C5C700CF0C4B /* i++重载运算符.cpp */,
 				50136AF62423C70700CF0C4B /* lower_bound.cpp */,
 				501368D32423C5C700CF0C4B /* min(K).cpp */,
 				501368DB2423C5C700CF0C4B /* Move.cpp */,
 				50136B382424E44F00CF0C4B /* O(n)中位数.cpp */,
 				501368D52423C5C700CF0C4B /* strcmp.cpp */,
+				50340A5F2434C7B400F2572D /* 字典树例题.cpp */,
+				50340A602434C7E700F2572D /* 字典树类.cpp */,
+				50340A612434EBC800F2572D /* 函数重载.cpp */,
 			);
 			path = "我的算法";
 			sourceTree = "<group>";
@@ -3883,7 +3887,7 @@
 				501369C82423C5C800CF0C4B /* recoverATreeFromPreorderTraversal.cpp in Sources */,
 				5013695C2423C5C800CF0C4B /* FirstBadVersion.cpp in Sources */,
 				5013693B2423C5C800CF0C4B /* ABCstr.cpp in Sources */,
-				50136ADA2423C5C900CF0C4B /* i++.cpp in Sources */,
+				50136ADA2423C5C900CF0C4B /* i++重载运算符.cpp in Sources */,
 				501369292423C5C800CF0C4B /* DayBetweenYear.cpp in Sources */,
 				50136A252423C5C800CF0C4B /* 144_binaryTreePreorderTraversal.cpp in Sources */,
 				501369BE2423C5C800CF0C4B /* topKFrequentElements.cpp in Sources */,
