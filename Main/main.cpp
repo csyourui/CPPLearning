@@ -1,31 +1,33 @@
 //
-//  单例模式.cpp
-//  test
+//  单例模式_懒汉.cpp
+//  C++Learning
 //
-//  Created by yourui on 2020/3/10.
+//  Created by yourui on 2020/4/6.
 //  Copyright © 2020 yourui. All rights reserved.
 //
 
-#include <stdio.h>
-class Singleton{
-private:
-    Singleton(){};
-    ~Singleton(){};
-    Singleton(const Singleton&);
-    Singleton& operator=(const Singleton&);
-public:
-    static Singleton* getInstance()
-    {
-        static Singleton* singleton;
-        return singleton;
-    }
-};
+#include <iostream>
+#include <vector>
+using namespace std;
 
+ 
+void shellSort(vector<int> &v){
+    int h = 1, N = (int)v.size();
+    while(h < N/3)
+        h = 3*h + 1;
+    while(h >= 1){
+        for (int i = h; i < N; i++) {
+            for(int j = i;j >= h && v[j] < v[j-h]; j -= h){
+                swap(v[j], v[j-h]);
+            }
+        }
+        h /= 3;
+    }
+}
 int main(){
-    Singleton* p1 = Singleton::getInstance();
-    Singleton* p2 = Singleton::getInstance();
-    if(p1 == p2)
-        printf("一致对象\n");
-    else
-        printf("不一致对象\n");
+    vector<int> v = {1,12,0,8,2,3,5,9,10,6,7,4,11};
+    shellSort(v);
+    for (int i = 0; i < v.size(); i++) {
+        cout<<v[i]<<endl;
+    }
 }

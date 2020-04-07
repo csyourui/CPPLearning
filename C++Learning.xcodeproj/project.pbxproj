@@ -478,7 +478,7 @@
 		50136AC72423C5C800CF0C4B /* 三色旗问题.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368CE2423C5C700CF0C4B /* 三色旗问题.cpp */; };
 		50136AC82423C5C800CF0C4B /* 字符串分割.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368CF2423C5C700CF0C4B /* 字符串分割.cpp */; };
 		50136AC92423C5C800CF0C4B /* 排序算法.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368D02423C5C700CF0C4B /* 排序算法.cpp */; };
-		50136ACA2423C5C800CF0C4B /* 单例模式.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368D12423C5C700CF0C4B /* 单例模式.cpp */; };
+		50136ACA2423C5C800CF0C4B /* 单例模式_静态局部对象.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368D12423C5C700CF0C4B /* 单例模式_静态局部对象.cpp */; };
 		50136ACB2423C5C800CF0C4B /* min(K).cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368D32423C5C700CF0C4B /* min(K).cpp */; };
 		50136ACC2423C5C800CF0C4B /* 最长公共子串.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368D42423C5C700CF0C4B /* 最长公共子串.cpp */; };
 		50136ACD2423C5C800CF0C4B /* strcmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501368D52423C5C700CF0C4B /* strcmp.cpp */; };
@@ -1021,7 +1021,7 @@
 		501368CE2423C5C700CF0C4B /* 三色旗问题.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "三色旗问题.cpp"; sourceTree = "<group>"; };
 		501368CF2423C5C700CF0C4B /* 字符串分割.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "字符串分割.cpp"; sourceTree = "<group>"; };
 		501368D02423C5C700CF0C4B /* 排序算法.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "排序算法.cpp"; sourceTree = "<group>"; };
-		501368D12423C5C700CF0C4B /* 单例模式.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "单例模式.cpp"; sourceTree = "<group>"; };
+		501368D12423C5C700CF0C4B /* 单例模式_静态局部对象.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "单例模式_静态局部对象.cpp"; sourceTree = "<group>"; };
 		501368D32423C5C700CF0C4B /* min(K).cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "min(K).cpp"; sourceTree = "<group>"; };
 		501368D42423C5C700CF0C4B /* 最长公共子串.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "最长公共子串.cpp"; sourceTree = "<group>"; };
 		501368D52423C5C700CF0C4B /* strcmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strcmp.cpp; sourceTree = "<group>"; };
@@ -1092,6 +1092,7 @@
 		50340A5F2434C7B400F2572D /* 字典树例题.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "字典树例题.cpp"; sourceTree = "<group>"; };
 		50340A602434C7E700F2572D /* 字典树类.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "字典树类.cpp"; sourceTree = "<group>"; };
 		50340A612434EBC800F2572D /* 函数重载.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "函数重载.cpp"; sourceTree = "<group>"; };
+		50340A62243AE05800F2572D /* 单例模式_懒汉.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "单例模式_懒汉.cpp"; sourceTree = "<group>"; };
 		503A57E5242F0BCD00ACBE0E /* 24_反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "24_反转链表.cpp"; sourceTree = "<group>"; };
 		503A57E6242F0C2D00ACBE0E /* 25_合并两个有序链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "25_合并两个有序链表.cpp"; sourceTree = "<group>"; };
 		503A57E7242F0D3A00ACBE0E /* 26_树的子结构.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "26_树的子结构.cpp"; sourceTree = "<group>"; };
@@ -3560,7 +3561,8 @@
 			children = (
 				50136B2A2424767E00CF0C4B /* 并查集.cpp */,
 				501368DD2423C5C700CF0C4B /* 大整数乘法(使用加法实现).cpp */,
-				501368D12423C5C700CF0C4B /* 单例模式.cpp */,
+				501368D12423C5C700CF0C4B /* 单例模式_静态局部对象.cpp */,
+				50340A62243AE05800F2572D /* 单例模式_懒汉.cpp */,
 				50340A5E2434845400F2572D /* 读者写者问题(读写公平).cpp */,
 				503A57F42430330700ACBE0E /* 读者写者问题(读者优先).cpp */,
 				50340A5D2434822B00F2572D /* 读者写者问题(写者优先).cpp */,
@@ -3799,7 +3801,7 @@
 		501365F52423C4EA00CF0C4B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = yourui;
 				TargetAttributes = {
 					501365FC2423C4EA00CF0C4B = {
@@ -4033,7 +4035,7 @@
 				50136AD12423C5C800CF0C4B /* 最长回文子序列.cpp in Sources */,
 				50136ADF2423C5C900CF0C4B /* 414_thirdMaximumNumber.cpp in Sources */,
 				501369D12423C5C800CF0C4B /* 39_combinationSum.cpp in Sources */,
-				50136ACA2423C5C800CF0C4B /* 单例模式.cpp in Sources */,
+				50136ACA2423C5C800CF0C4B /* 单例模式_静态局部对象.cpp in Sources */,
 				501369572423C5C800CF0C4B /* 557_reverseWordsInAStringIii.cpp in Sources */,
 				50136AAB2423C5C800CF0C4B /* 22_generateParentheses.cpp in Sources */,
 				50136A372423C5C800CF0C4B /* 21_mergeTwoSortedList.cpp in Sources */,
