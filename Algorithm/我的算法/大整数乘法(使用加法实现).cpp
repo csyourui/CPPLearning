@@ -35,7 +35,7 @@ string multi(string str1, string str2){
         for(int j = 0; j < c; j++){
             res = add(res , str1);
         }
-        str1.push_back('0');
+        str1 = str1 + '0';
     }
     return res;
 }

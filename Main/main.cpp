@@ -1,33 +1,44 @@
-//
-//  单例模式_懒汉.cpp
-//  C++Learning
-//
-//  Created by yourui on 2020/4/6.
-//  Copyright © 2020 yourui. All rights reserved.
-//
-
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
-
- 
-void shellSort(vector<int> &v){
-    int h = 1, N = (int)v.size();
-    while(h < N/3)
-        h = 3*h + 1;
-    while(h >= 1){
-        for (int i = h; i < N; i++) {
-            for(int j = i;j >= h && v[j] < v[j-h]; j -= h){
-                swap(v[j], v[j-h]);
+void oper(vector<int> &v){
+    unsigned long N = v.size();
+    vector<int> B(N);
+    int k = 0;
+    int x0 =(int) N/2;
+    B[x0] = v[k++];
+    int index = 1;
+    while(k < v.size()){
+        if(N % 2==0){
+            if(index % 2 == 1){
+                x0 += -1 * index;
+            }else{
+                x0 += 1 * index;
+            }
+        }else{
+            if(index % 2 != 1){
+                x0 += -1 * index;
+            }else{
+                x0 += 1 * index;
             }
         }
-        h /= 3;
+        index++;
+        B[x0] = v[k++];
     }
+    v = B;
 }
 int main(){
-    vector<int> v = {1,12,0,8,2,3,5,9,10,6,7,4,11};
-    shellSort(v);
-    for (int i = 0; i < v.size(); i++) {
-        cout<<v[i]<<endl;
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    for(int i = 0; i < n; i++){
+        cin >> v[i];
     }
+    oper(v);
+    cout<<v[0];
+    for(int i = 1; i < n; i++){
+        cout<<" "<<v[i];
+    }
+    cout<<endl;
 }

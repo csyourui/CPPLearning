@@ -1140,6 +1140,11 @@
 		506F375E242E44B700C0DD7E /* 66_构建乘积数组.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "66_构建乘积数组.cpp"; sourceTree = "<group>"; };
 		506F375F242E486400C0DD7E /* 38_字符串的排列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "38_字符串的排列.cpp"; sourceTree = "<group>"; };
 		506F3760242E4D3800C0DD7E /* 39_数组中出现次数超过一半的数字.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "39_数组中出现次数超过一半的数字.cpp"; sourceTree = "<group>"; };
+		5076D81C243CBABD00107A6F /* 42_最大连续子数组和.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "42_最大连续子数组和.cpp"; sourceTree = "<group>"; };
+		5076D81D243CBBFE00107A6F /* 47_礼物的最大价值.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "47_礼物的最大价值.cpp"; sourceTree = "<group>"; };
+		5076D81E243F29A800107A6F /* 小易的升级之路.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "小易的升级之路.cpp"; sourceTree = "<group>"; };
+		5076D81F24400BBD00107A6F /* 扫描蘑菇.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "扫描蘑菇.cpp"; sourceTree = "<group>"; };
+		5076D82024400BD900107A6F /* 包含字符串.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "包含字符串.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1319,6 +1324,7 @@
 				501368E72423C5C700CF0C4B /* scripts */,
 				501368F02423C5C700CF0C4B /* 牛客 */,
 				503A57F2242FA0B200ACBE0E /* 网易笔试题.cpp */,
+				5076D82024400BD900107A6F /* 包含字符串.cpp */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -3638,6 +3644,8 @@
 			children = (
 				501368F12423C5C700CF0C4B /* 小易的字典.cpp */,
 				501368F22423C5C700CF0C4B /* 比特币最佳买卖时机.cpp */,
+				5076D81E243F29A800107A6F /* 小易的升级之路.cpp */,
+				5076D81F24400BBD00107A6F /* 扫描蘑菇.cpp */,
 			);
 			path = "牛客";
 			sourceTree = "<group>";
@@ -3737,6 +3745,8 @@
 				506F375E242E44B700C0DD7E /* 66_构建乘积数组.cpp */,
 				506F375D242E3FBF00C0DD7E /* 67_字符串转换为整数.cpp */,
 				506F375B242E378B00C0DD7E /* 68_二叉树的最近公共祖先.cpp */,
+				5076D81C243CBABD00107A6F /* 42_最大连续子数组和.cpp */,
+				5076D81D243CBBFE00107A6F /* 47_礼物的最大价值.cpp */,
 			);
 			path = "剑指OFFER";
 			sourceTree = "<group>";
