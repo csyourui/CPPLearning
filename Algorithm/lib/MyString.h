@@ -11,15 +11,15 @@
 #include <string.h>
 #include <iostream>
 using namespace std;
+
 class MyString{
 public:
     MyString();                                     //构造函数
-    MyString(const char* );                      //有参构造
-    //MyString(const char* str, int len);                //有参构造
-    MyString(const MyString& );                  //拷贝构造函数
-    MyString& operator =(const MyString &);      //拷贝赋值运算符
-    MyString operator +(const MyString &);      //重载加法运算符
-    char &operator[](int);                          //重载方括号运算符
+    MyString(const char*);                          //有参构造
+    MyString(const MyString& );                     //拷贝构造函数
+    MyString& operator =(const MyString &);         //拷贝赋值运算符
+    MyString operator +(const MyString &);          //重载加法运算符
+    char &operator[](int i);                        //重载方括号运算符
     size_t length();
     ~MyString();                                    //析构函数
 private:
@@ -79,13 +79,3 @@ MyString::~MyString(){
 }
 
 #endif /* MyString_h */
-
-int main(){
-    MyString a = "abc";
-    MyString b = "def";
-    MyString c = a+b;
-    cout<<a.length()<<endl;
-    //return 0;
-}
-
-

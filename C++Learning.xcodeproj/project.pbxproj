@@ -548,6 +548,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		50089F4024489063006F7D92 /* 腾讯笔试题N(sum).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "腾讯笔试题N(sum).cpp"; sourceTree = "<group>"; };
+		50089F41244890D3006F7D92 /* MyString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyString.h; sourceTree = "<group>"; };
 		501365FD2423C4EA00CF0C4B /* C++Learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++Learning"; sourceTree = BUILT_PRODUCTS_DIR; };
 		501366082423C5C500CF0C4B /* Bus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bus.cpp; sourceTree = "<group>"; };
 		501366092423C5C500CF0C4B /* DecodeNumber2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DecodeNumber2.cpp; sourceTree = "<group>"; };
@@ -1325,6 +1327,7 @@
 				501368F02423C5C700CF0C4B /* 牛客 */,
 				503A57F2242FA0B200ACBE0E /* 网易笔试题.cpp */,
 				5076D82024400BD900107A6F /* 包含字符串.cpp */,
+				50089F4024489063006F7D92 /* 腾讯笔试题N(sum).cpp */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -3670,6 +3673,7 @@
 			children = (
 				50136B032423C70800CF0C4B /* TreeNode.h */,
 				50136AF82423C70700CF0C4B /* ListNode.h */,
+				50089F41244890D3006F7D92 /* MyString.h */,
 			);
 			path = lib;
 			sourceTree = "<group>";
