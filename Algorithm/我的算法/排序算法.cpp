@@ -60,19 +60,37 @@ void selectSort(vector<T> &v){
 //     i
 //    / \
 //   c1 c2
+//template<typename T>
+//void maxHeapify(vector<T>& v, int i, int n){
+//    int c1 = i * 2 + 1;
+//    int c2 = i * 2 + 2;
+//    while(c1 <= n){
+//        int max = i;
+//        if(v[c1] > v[max]) max = c1;
+//        if(c2 <= n && v[c2] > v[max]) max = c2;
+//        if(max == i)
+//            return;
+//        else{
+//            my_swap(v[i], v[max]);
+//            i = max;
+//            c1 = i * 2 + 1;
+//            c2 = i * 2 + 2;
+//        }
+//    }
+//}
 template<typename T>
 void maxHeapify(vector<T>& v, int i, int n){
     int c1 = i * 2 + 1;
     int c2 = i * 2 + 2;
     while(c1 <= n){
-        int max = i;
-        if(v[c1] > v[max]) max = c1;
-        if(c2 <= n && v[c2] > v[max]) max = c2;
-        if(max == i)
+        int min = i;
+        if(v[c1] < v[min]) min = c1;
+        if(c2 <= n && v[c2] < v[min]) min = c2;
+        if(min == i)
             return;
         else{
-            my_swap(v[i], v[max]);
-            i = max;
+            my_swap(v[i], v[min]);
+            i = min;
             c1 = i * 2 + 1;
             c2 = i * 2 + 2;
         }

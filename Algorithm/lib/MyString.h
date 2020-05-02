@@ -57,7 +57,6 @@ MyString& MyString::operator =(const MyString &str){
     data = new char[len + 1];
     strcpy(data, str.data);
     return *this;
-    
 }
 MyString MyString::operator +(const MyString &str){
     MyString temp;

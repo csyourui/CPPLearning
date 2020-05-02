@@ -1142,11 +1142,17 @@
 		506F375E242E44B700C0DD7E /* 66_构建乘积数组.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "66_构建乘积数组.cpp"; sourceTree = "<group>"; };
 		506F375F242E486400C0DD7E /* 38_字符串的排列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "38_字符串的排列.cpp"; sourceTree = "<group>"; };
 		506F3760242E4D3800C0DD7E /* 39_数组中出现次数超过一半的数字.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "39_数组中出现次数超过一半的数字.cpp"; sourceTree = "<group>"; };
+		507488BC245132E20059E6B3 /* 背包问题.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "背包问题.cpp"; sourceTree = "<group>"; };
+		507488BF245135790059E6B3 /* 01背包问题.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "01背包问题.cpp"; sourceTree = "<group>"; };
 		5076D81C243CBABD00107A6F /* 42_最大连续子数组和.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "42_最大连续子数组和.cpp"; sourceTree = "<group>"; };
 		5076D81D243CBBFE00107A6F /* 47_礼物的最大价值.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "47_礼物的最大价值.cpp"; sourceTree = "<group>"; };
 		5076D81E243F29A800107A6F /* 小易的升级之路.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "小易的升级之路.cpp"; sourceTree = "<group>"; };
 		5076D81F24400BBD00107A6F /* 扫描蘑菇.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "扫描蘑菇.cpp"; sourceTree = "<group>"; };
 		5076D82024400BD900107A6F /* 包含字符串.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "包含字符串.cpp"; sourceTree = "<group>"; };
+		50FF4027244ABA980066E33C /* 04_06后继者.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "04_06后继者.cpp"; sourceTree = "<group>"; };
+		50FF4028244ABAF50066E33C /* 01_01判定字符是否唯一.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "01_01判定字符是否唯一.cpp"; sourceTree = "<group>"; };
+		50FF4029244B35480066E33C /* 单调栈.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "单调栈.cpp"; sourceTree = "<group>"; };
+		50FF402A244B38050066E33C /* 京东笔试题.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "京东笔试题.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1317,6 +1323,7 @@
 		5013666A2423C5C500CF0C4B /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				50FF4026244ABA7C0066E33C /* 程序员面试金典（第6版） */,
 				503A57F624309F1200ACBE0E /* 设计模式 */,
 				506F3744242DC4E400C0DD7E /* 剑指OFFER */,
 				50136B2B2424957F00CF0C4B /* 程序员代码面试指南 */,
@@ -1328,6 +1335,7 @@
 				503A57F2242FA0B200ACBE0E /* 网易笔试题.cpp */,
 				5076D82024400BD900107A6F /* 包含字符串.cpp */,
 				50089F4024489063006F7D92 /* 腾讯笔试题N(sum).cpp */,
+				50FF402A244B38050066E33C /* 京东笔试题.cpp */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -3568,6 +3576,7 @@
 		501368CD2423C5C700CF0C4B /* 我的算法 */ = {
 			isa = PBXGroup;
 			children = (
+				507488BD245135610059E6B3 /* 动态规划 */,
 				50136B2A2424767E00CF0C4B /* 并查集.cpp */,
 				501368DD2423C5C700CF0C4B /* 大整数乘法(使用加法实现).cpp */,
 				501368D12423C5C700CF0C4B /* 单例模式_静态局部对象.cpp */,
@@ -3609,6 +3618,8 @@
 				50340A5F2434C7B400F2572D /* 字典树例题.cpp */,
 				50340A602434C7E700F2572D /* 字典树类.cpp */,
 				50340A612434EBC800F2572D /* 函数重载.cpp */,
+				50FF4029244B35480066E33C /* 单调栈.cpp */,
+				507488BC245132E20059E6B3 /* 背包问题.cpp */,
 			);
 			path = "我的算法";
 			sourceTree = "<group>";
@@ -3753,6 +3764,31 @@
 				5076D81D243CBBFE00107A6F /* 47_礼物的最大价值.cpp */,
 			);
 			path = "剑指OFFER";
+			sourceTree = "<group>";
+		};
+		507488BD245135610059E6B3 /* 动态规划 */ = {
+			isa = PBXGroup;
+			children = (
+				507488BE245135610059E6B3 /* 背包问题 */,
+			);
+			path = "动态规划";
+			sourceTree = "<group>";
+		};
+		507488BE245135610059E6B3 /* 背包问题 */ = {
+			isa = PBXGroup;
+			children = (
+				507488BF245135790059E6B3 /* 01背包问题.cpp */,
+			);
+			path = "背包问题";
+			sourceTree = "<group>";
+		};
+		50FF4026244ABA7C0066E33C /* 程序员面试金典（第6版） */ = {
+			isa = PBXGroup;
+			children = (
+				50FF4027244ABA980066E33C /* 04_06后继者.cpp */,
+				50FF4028244ABAF50066E33C /* 01_01判定字符是否唯一.cpp */,
+			);
+			path = "程序员面试金典（第6版）";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
