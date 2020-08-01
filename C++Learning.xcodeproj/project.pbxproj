@@ -1149,6 +1149,7 @@
 		5076D81E243F29A800107A6F /* 小易的升级之路.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "小易的升级之路.cpp"; sourceTree = "<group>"; };
 		5076D81F24400BBD00107A6F /* 扫描蘑菇.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "扫描蘑菇.cpp"; sourceTree = "<group>"; };
 		5076D82024400BD900107A6F /* 包含字符串.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "包含字符串.cpp"; sourceTree = "<group>"; };
+		50C8377A24D5105F00BC29E1 /* Mystrcmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mystrcmp.h; sourceTree = "<group>"; };
 		50FF4027244ABA980066E33C /* 04_06后继者.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "04_06后继者.cpp"; sourceTree = "<group>"; };
 		50FF4028244ABAF50066E33C /* 01_01判定字符是否唯一.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "01_01判定字符是否唯一.cpp"; sourceTree = "<group>"; };
 		50FF4029244B35480066E33C /* 单调栈.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "单调栈.cpp"; sourceTree = "<group>"; };
@@ -3685,6 +3686,7 @@
 				50136B032423C70800CF0C4B /* TreeNode.h */,
 				50136AF82423C70700CF0C4B /* ListNode.h */,
 				50089F41244890D3006F7D92 /* MyString.h */,
+				50C8377A24D5105F00BC29E1 /* Mystrcmp.h */,
 			);
 			path = lib;
 			sourceTree = "<group>";

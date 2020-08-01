@@ -16,7 +16,7 @@ void my_swap(T &a, T &b){
     b = temp;
 }
 
-//冒泡排序
+//冒泡排序 稳定算法
 template<typename T>
 void bubbleSort(vector<T> &v){
     int N = v.size();
@@ -29,7 +29,7 @@ void bubbleSort(vector<T> &v){
     }
 }
 
-//插入排序
+//插入排序 稳定排序
 template<typename T>
 void insertSort(vector<T> &v){
     int N = v.size();
@@ -40,7 +40,7 @@ void insertSort(vector<T> &v){
     }
 }
 
-//选择排序
+//选择排序 不稳定
 template<typename T>
 void selectSort(vector<T> &v){
     int N = v.size();
@@ -56,30 +56,31 @@ void selectSort(vector<T> &v){
 }
 
 
-//堆排序
+//堆排序 不稳定
 //     i
 //    / \
 //   c1 c2
-//template<typename T>
-//void maxHeapify(vector<T>& v, int i, int n){
-//    int c1 = i * 2 + 1;
-//    int c2 = i * 2 + 2;
-//    while(c1 <= n){
-//        int max = i;
-//        if(v[c1] > v[max]) max = c1;
-//        if(c2 <= n && v[c2] > v[max]) max = c2;
-//        if(max == i)
-//            return;
-//        else{
-//            my_swap(v[i], v[max]);
-//            i = max;
-//            c1 = i * 2 + 1;
-//            c2 = i * 2 + 2;
-//        }
-//    }
-//}
 template<typename T>
 void maxHeapify(vector<T>& v, int i, int n){
+    int c1 = i * 2 + 1;
+    int c2 = i * 2 + 2;
+    while(c1 <= n){
+        int max = i;
+        if(v[c1] > v[max]) max = c1;
+        if(c2 <= n && v[c2] > v[max]) max = c2;
+        if(max == i)
+            return;
+        else{
+            my_swap(v[i], v[max]);
+            i = max;
+            c1 = i * 2 + 1;
+            c2 = i * 2 + 2;
+        }
+    }
+}
+
+template<typename T>
+void minHeapify(vector<T>& v, int i, int n){
     int c1 = i * 2 + 1;
     int c2 = i * 2 + 2;
     while(c1 <= n){
@@ -110,7 +111,7 @@ void heapSort(vector<T> &v){
     }
 }
 
-//希尔排序
+//希尔排序 不稳定排序
 template<typename T>
 void shellSort(vector<T>&v){
     int N = v.size();
@@ -128,7 +129,7 @@ void shellSort(vector<T>&v){
     }
 }
 
-//桶排序
+//桶排序 稳定
 void bucketSort(vector<int> &v){
     int N = (int)v.size();
     int maxV = 20;
@@ -143,9 +144,9 @@ void bucketSort(vector<int> &v){
         }
     }
 }
-//快速排序
+//快速排序 不稳定
 template<typename T>
-int partition(vector<T>& v,int start,int end){
+int partition(vector<T>& v,int start, int end){
     int pivot = v[start];
     while(start < end) {
         while(start < end && v[end] >= pivot) end--;
@@ -157,7 +158,7 @@ int partition(vector<T>& v,int start,int end){
     return start;
 }
 template<typename T>
-void quickSort(vector<T>& v,int start,int end){
+void quickSort(vector<T>& v,int start, int end){
     if(start < end) {
         int pivotpos = partition(v,start,end);
         quickSort(v, start, pivotpos-1);

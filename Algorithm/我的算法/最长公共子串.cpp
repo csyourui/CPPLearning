@@ -19,7 +19,7 @@ dp(i, j) = dp(i-1, j-1)+1               如果 str1[i] == str2[j]
  */
 string LCS(string str1, string str2){
     int M = (int) str1.length(), N = (int) str2.length();
-    vector<vector<int>> dp(M + 1, vector<int>(N + 1, 0));
+    vector<vector<int>> dp(M + 1 , vector<int>(N + 1, 0));
     int maxLength = 0;
     string res;
     for (int i = 1; i <= M; i++) {
