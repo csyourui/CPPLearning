@@ -1,8 +1,8 @@
 //
-//  O(n)中位数.cpp
+//  距离场.cpp
 //  C++Learning
 //
-//  Created by yourui on 2020/3/20.
+//  Created by yourui on 2020/8/20.
 //  Copyright © 2020 yourui. All rights reserved.
 //
 
@@ -59,8 +59,6 @@ int** calculateDF(int **map, int m, int n) {
         }
     }
     bfs(map, m, n);
-    
-    // 深拷贝map
     int **nmap = new int*[m];
     for (int i = 0; i < m; i++) {
         nmap[i] = new int[n];
@@ -116,4 +114,5 @@ int main(){
         cout <<endl;
     }
 }
+
 

@@ -10,7 +10,17 @@
 #include <vector>
 using namespace std;
 
-
+int partition(vector<int>& v, int start, int end) {
+    int pivot = v[start];
+    while (start < end) {
+        while(start < end && v[end] >= pivot) end--;
+        v[start] = v[end];
+        while (start < end && v[start] <= pivot) start++;
+        v[end] = v[start];
+    }
+    v[start] = pivot;
+    return start;
+}
 int parition(vector<int>&v, int start, int end){
     int key = v[start];
     int i = start + 1;
